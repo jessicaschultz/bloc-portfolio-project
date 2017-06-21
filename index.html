@@ -9,6 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <link rel="icon" href="../../favicon.ico">
+  <script src="https://use.fontawesome.com/a8636f7ab7.js"></script>
 
   <title>Coming Soon</title>
 <!--plug ins-->
@@ -16,11 +17,10 @@
   <link href="lib/cover/cover.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
   <link href="node_modules/vegas/dist/vegas.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
 <!--fonts-->
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Quicksand:300" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400|Playfair+Display" rel="stylesheet">
 </head>
 
 <body class="vegas-slider">
@@ -28,67 +28,73 @@
     <div class="site-wrapper-inner">
       <div class="cover-container">
 
-        <div class="masthead clearfix">
-          <div class="inner">
-            <h3 class="masthead-brand" id="logo">Jessica Schultz Media</h3>
-            <nav>
-              <ul class="nav masthead-nav">
-                <li class="active"><a href="#home" class="home visible">Home</a></li>
-                <li><a href="#about" class="about">About</a></li>
-                <li><a href="#services" class="services">Services</a></li> 
-                <li><a href="#contact" class="contact">Contact</a></li>
-              </ul>
-            </nav>
-          </div>
+        <div class="masthead inner clearfix animated fadeInDown">       
+          <h3 class="masthead-brand" id="logo">Jessica Schultz Media</h3>
+          <nav>
+            <ul class="nav masthead-nav">
+              <li class="active"><a href="#home" class="home visible">Home</a></li>
+              <li><a href="#about" class="about">About</a></li>
+              <li><a href="#services" class="services">Services</a></li> 
+              <li><a href="#contact" class="contact">Contact</a></li>
+            </ul>
+          </nav>     
         </div>
 <!--HOME SECTION-->
-        <div class="inner cover slide-content active" id="home">
+        <div class="inner cover slide-content active animated fadeInDown" id="home">
           <h1 class="cover-heading">Currently under construction.</h1>
           <p class="lead">Ready to make an impact online?</p>
           <p class="lead">
-            <a href="#" class="btn btn-lg btn-default">Let's get to work!</a>
+            <a href="#contact" class="btn btn-lg btn-default" id="contact-btn">Let's get to work!</a>
           </p>
         </div>
 <!--ABOUT SECTION-->
-      <div class="inner cover slide-content container-fluid" id="about">
+      <div class="inner cover slide-content container-fluid animated slideInRight" id="about">
         <h1 class="cover-heading">About.</h1>
-        <div class="row">
-          <div class="col-md-6">
-            <p class="lead">bout me para one....Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <div class="row about-row">
+          <div class="col-xs-12 col-sm-6 col-md-8" id="row-one">
+            <p class="lead">I'm a St. Louis native living in Southern California with my husband and two munchkin cats who loves creating beautiful things. My journey into tech is not what you'd typically expect from someone who can build you a responsive site from scratch using HTML, CSS, and JavaScript (among other languages, libraries, &amp; frameworks). <br>Like all great things in life, it all started with food...in the shape of a WordPress food blog. To my surprise, I was more fascinated with how I could make the computer do this and that than actually blogging. I was hooked and wanted to learn how to build my own site to fit my own specific needs.</p>
           </div>
-          <div class="col-md-6">
-            <p class="lead">bout me para one....Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div class="row about-row" id="row-two">
+          <div class="col-xs-12 col-sm-6 col-md-8">
+            <p class="lead">A site that didn't limit my creativity to a simple lackluster WordPress theme. That curiosity then opened a door that could never be shut. When I learned how to build my first website, I realized that I found something that channeled my inner creativity and passion for learning, while also giving me the freedom and versatility I was looking for in my work. I realized I found my fire. I love using my passion for design to develop websites that bring to life a client's vision. Rather you're a small startup company, entrepreneur, #girlboss, business professional, or just a blogger with a bigger vision than what your current WordPress theme can handle - I'd love to help you!</p>
           </div>
         </div>
       </div>
 <!--SERVICES SECTION-->
       <div class="inner cover slide-content container-fluid" id="services">
-        <h1 class="cover-heading">Services.</h1>
-        <div class="row">
-          <div class="col-sm-4 col-md-4 clearfix">
-            <h3 class="services-heading">Well Documented</h3>
-            <p class="lead">blurb about documentation. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <h1 class="cover-heading animated slideInDown">Services.</h1>
+        <div class="row services-row animated slideInUp">
+          <div class="col-sm-4 col-md-4 clearfix services-div">
+            <i class="fa fa-lightbulb-o fa-4x services-icon" aria-hidden="true"></i>
+            <h3 class="services-heading">Website Design</h3>
+            <p class="lead services-p">Allow your vision and content guide the layout of your new dream site while pulling inspiration from current trends.</p>
           </div>
         </div>
-        <div class="row">
-          <div class="col-sm-4 col-md-4 clearfix">
-            <h3 class="services-heading">Fully Responsive</h3>
-            <p class="lead">blurb about RWD. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <div class="row services-row animated slideInUp">
+          <div class="col-sm-4 col-md-4 clearfix services-div">
+            <i class="fa fa-desktop fa-4x services-icon" aria-hidden="true"></i>
+            <h3 class="services-heading service-two">Front-End Development</h3>
+            <p class="lead services-p">All sites are mobile friendly, making your new website easily accessible across all devices.</p>
           </div>
         </div>
-        <div class="row">
-          <div class="col-sm-4 col-md-4 clearfix">
-            <h3 class="services-heading">Animation & More</h3>
-            <p class="lead">blurb about animation and other features. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <div class="row services-row animated slideInUp">
+          <div class="col-sm-4 col-md-4 clearfix services-div">
+            <i class="fa fa-tags fa-4x services-icon" aria-hidden="true"></i>
+            <h3 class="services-heading">Premium Features</h3>
+            <p class="lead services-p" id="premium-service">high-quality website templates, set-up &amp; install packages, and other special features coming soon.</p>
           </div>
         </div>
       </div>
 <!--CONTACT SECTION-->
-      <div class="inner cover slide-content" id="contact">
+      <div class="inner cover slide-content animated zoomIn" id="contact">
         <h1 class="cover-heading">Let's connect.</h1>
         <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        
         <!--contact form-->
         <!--End contact form-->
+        
+        
       </div>
 <!--FOOTER SECTION-->
         <div class="mastfoot" id="footer">
@@ -97,11 +103,11 @@
           </div>
         </div>
 
-      </div>
+      </div> <!--end cover-container-->
 
-    </div>
+    </div> <!--end site-wrapper-inner-->
 
-  </div>
+  </div> <!--end site-wrapper-->
 
   <!-- Bootstrap core JavaScript
     ================================================== -->
