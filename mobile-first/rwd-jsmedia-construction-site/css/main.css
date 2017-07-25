@@ -1,0 +1,188 @@
+/*GLOBAL STYLES*/
+html {
+  font-size: 14px;
+  height: 100%;
+}
+body {
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  background-color: rgb(2, 2, 2);
+  font-family:'Josefin Slab', serif;
+}
+html,body {
+  height:100%;
+  width:100%;
+  position:relative;
+}
+#bg-carousel{
+  position:fixed;
+  width:100%;
+  height:100%;
+  z-index:-99;
+}
+.carousel,
+.carousel-inner {
+  width:100%;
+  height:100%;
+  z-index:-90;
+  overflow:hidden;
+}
+.carousel-item {
+  width:100%;
+  height:100%;
+  background-position:center center;
+  background-size:cover;
+  z-index:-80;
+}
+ 
+#content-wrapper {
+  position:absolute;
+  z-index:100 !important;
+  min-width:100%;
+  min-height:100%;
+}
+
+/*LINKS*/
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333;
+  text-shadow: none;
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+/*HEADER/NAVIGATION*/
+.navbar, .navbar-nav{
+  font-family: 'Playfair Display','sans serif';
+  font-size: 1.3rem;
+  letter-spacing: 4px;
+  opacity:0.9;
+}
+.navbar-brand {
+  font-size: 1.4rem;
+}
+
+.navbar-nav > li + li {
+  margin-left: 20px;
+}
+.navbar-nav > li > a {
+  color: #fff;
+  color: rgba(255,255,255,.75);
+  border-bottom: 2px solid transparent;
+}
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #a9a9a9;
+  border-bottom-color: rgba(255,255,255,.25);
+}
+.navbar-nav > .active > a,
+.navbar-nav > .active > a:hover,
+.navbar-nav > .active > a:focus {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+.navbar-default .navbar-toggle {
+/*    border-color: transparent;*/
+}
+
+span{
+  color: white;
+}
+
+/**/
+.slide-content{
+  display: none;
+/*  justify-content: center;*/
+/*  align-items: center;*/
+}
+
+.slide-content.active{
+  display: inherit;
+/*  justify-content: center;*/
+/*  align-items: center;*/
+/*  width: 98%;*/
+/*  padding-top: 15%;*/
+/*  margin: auto auto; */
+}
+
+.content-heading{
+  font-family: 'Playfair Display','sans serif';
+  font-size: 2.5rem;
+  letter-spacing: 5px;
+}
+.services-heading{
+  font-family: 'Playfair Display','sans serif';
+  font-size: 2rem;
+  letter-spacing: 5px;
+  margin-bottom: 5%;
+  vertical-align:text-bottom;
+}
+.content-p{
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  text-align: left;
+  margin: 10px;
+}
+.landing-p{
+  font-size: 1.6rem;
+  letter-spacing: 3px;
+  padding-top: 5%;
+}
+.contact-icon-p{
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  margin: 10px;
+}
+.contact-icon-p span{
+  margin: 0 3%;
+}
+#contact{
+  width: 90%;
+  margin: auto auto;
+}
+
+#services .col-md{
+  align-self: center;
+}
+
+
+.footer-p{
+  color: white;
+}
+footer span{
+  color: red;
+}
+
+
+
+
+/*
+Extra small devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap*/
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media all (min-width: 768px) {
+  html {
+    font-size: 18px;
+  }
+  .landing-heading{
+    font-size: 500%;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }

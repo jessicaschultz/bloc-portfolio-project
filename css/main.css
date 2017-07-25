@@ -6,6 +6,11 @@
 div.slide-content.active{
   display: inherit;
 }
+.carousel-item,.carousel-inner{
+/*  width: 100%;*/
+/*  background-repeat: no-repeat;*/
+/*  background-size: cover; */
+}
 /*header*/
 .masthead{
   position: fixed;
